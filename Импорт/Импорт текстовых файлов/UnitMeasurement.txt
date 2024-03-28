@@ -1,0 +1,2 @@
+ID_UnitMeasurement	Name
+1	Рулон

@@ -1,0 +1,49 @@
+﻿<Window x:Class="Fabrics.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Fabrics"
+        mc:Ignorable="d"
+                Title="Окно авторизации" Height="460" Width="800" MinHeight="460" MinWidth="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition />
+                <RowDefinition Height="60"/>
+            </Grid.RowDefinitions>
+            <TextBox Grid.Row="1" Width="400" BorderBrush="Black" Name="Login" BorderThickness="1" FontSize="30"></TextBox>
+            <TextBlock Grid.Row="1" Margin="100,0,600,0" VerticalAlignment="Center" Text="Логин:" FontSize="25"></TextBlock>
+            <Button Grid.Row="5" x:Name="Autorization" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Autorization_Click" Foreground="Black" FontSize="22" >Авторизоваться</Button>
+            <Button Grid.Row="5" x:Name="Guest" HorizontalAlignment="Left" VerticalAlignment="Center" Click="Guest_Click" Foreground="Black" FontSize="22" Content="Просмотр в режиме гостя"/>
+            <TextBlock Grid.Row="3" Margin="85,0,600,0" Text="Пароль:" FontSize="25"></TextBlock>
+            <StackPanel Grid.Row="4" Name="Captcha_Obj" Visibility="Hidden">
+                <TextBlock TextAlignment="Center" Foreground="Black" Name="Captcha_Text" FontSize="25">Captcha</TextBlock>
+                <Grid>
+                    <Canvas Margin="112,0,113,0" x:Name="Canvas_Captcha">
+                    </Canvas>
+                    <TextBox Height="30" Width="200" FontSize="25" MaxLength="5" IsEnabled="False" Foreground="red" TextAlignment="Center" Name="Captcha_Textbox">
+                        <TextBox.Effect>
+                            <BlurEffect Radius="2"></BlurEffect>
+                        </TextBox.Effect>
+                    </TextBox>
+                </Grid>
+                <TextBlock Foreground="Black" FontSize="25" TextAlignment="Center" Name="Captcha_Text2">Введите Captcha</TextBlock>
+                <TextBox Height="30" Width="200" FontSize="25" MaxLength="5" Name="Captcha_Textbox2" TextAlignment="Center" ToolTip="Необходимо ввести символы с верхнего поля">
+                </TextBox>
+                <Grid>
+                    <Button Margin="240,0,0,0" HorizontalAlignment="Left" Name="Restart" Content="Обновить" Click="Restart_Click"/>
+                    <Button Name="Okay" HorizontalAlignment="Left" Content="Проверка" Click="Okay_Click" Margin="374,0,0,0"/>
+                </Grid>
+            </StackPanel>
+            <TextBox x:Name="OpenPassword" Grid.Row="3" FontSize="30" BorderBrush="Black" BorderThickness="1" Width="400" Visibility="Hidden"/>
+            <PasswordBox Grid.Row="3" Width="400" x:Name="Password" FontSize="30" BorderBrush="Black" BorderThickness="1"/>
+            <Button x:Name="ShowPassword" Click="ShowPassword_Click" Content="👁" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="25" Margin="0,0,150,0"/>
+            <TextBlock x:Name="TimeClose" Text="" VerticalAlignment="Center" FontSize="18" HorizontalAlignment="Center"/>
+        </Grid>
+    </Grid>
+</Window>

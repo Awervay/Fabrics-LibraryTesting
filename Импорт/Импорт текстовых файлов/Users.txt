@@ -1,0 +1,11 @@
+ID_User	FIO	Login	Password	ID_Role
+1	Лавров Богдан Львович	8lf0g@yandex.ru	2L6KZG	1
+2	Смирнова Полина Фёдоровна	1zx8@yandex.ru	uzWC67	1
+3	Полякова София Данииловна	x@mail.ru	8ntwUp	1
+4	Чеботарева Марина Данииловна	34d@gmail.com	YOyhfR	3
+5	Ермолов Адам Иванович	pxacl@mail.ru	RSbvHv	3
+6	Васильев Андрей Кириллович	7o1@gmail.com	rwVDh9	3
+7	Маслов Максим Иванович	1@gmail.com	LdNyos	2
+8	Симонов Михаил Тимурович	iut@gmail.com	gynQMT	2
+9	Павлова Ксения Михайловна	e3t@outlook.com	AtnDjr	2
+10	Трифонов Григорий Юрьевич	41clb6o2g@yandex.ru	JlFRCZ	2

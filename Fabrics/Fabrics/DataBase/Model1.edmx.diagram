@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ebe0036fb2194a8fbbc18cee7057b1e1" Name="Diagram1">
+        <EntityTypeShape EntityType="VinidiktovDay5Model.CategoryProduct" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="VinidiktovDay5Model.ManufactureProduct" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="VinidiktovDay5Model.Order" Width="1.5" PointX="3" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="VinidiktovDay5Model.OrderProduct" Width="1.5" PointX="5.25" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="VinidiktovDay5Model.PickUpPoint" Width="1.5" PointX="0.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="VinidiktovDay5Model.Product" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="VinidiktovDay5Model.Role" Width="1.5" PointX="1.5" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="VinidiktovDay5Model.StatusOrder" Width="1.5" PointX="0.75" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VinidiktovDay5Model.Supplier" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="VinidiktovDay5Model.UnitMeasurement" Width="1.5" PointX="0.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="VinidiktovDay5Model.Users" Width="1.5" PointX="0.75" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="VinidiktovDay5Model.InfoProduct" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <AssociationConnector Association="VinidiktovDay5Model.FK_Product_CategoryProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="VinidiktovDay5Model.FK_Product_ManufactureProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="VinidiktovDay5Model.FK_Order_PickUpPoint" ManuallyRouted="false" />
+        <AssociationConnector Association="VinidiktovDay5Model.FK_Order_StatusOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="VinidiktovDay5Model.FK_Order_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="VinidiktovDay5Model.FK_OrderProduct_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="VinidiktovDay5Model.FK_OrderProduct_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="VinidiktovDay5Model.FK_Product_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="VinidiktovDay5Model.FK_Product_UnitMeasurement" ManuallyRouted="false" />
+        <AssociationConnector Association="VinidiktovDay5Model.FK_Users_Role" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
